@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-	
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
-	
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
-	<!-- TODO Add Nodes -->
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <TextField fx:id="txt1" layoutX="71.0" layoutY="125.0" promptText="Add Unit to Convert" />
+      <TextField fx:id="txt2" layoutX="301.0" layoutY="125.0" promptText="Add Unit to Convert" />
+      <Button fx:id="bt1" layoutX="221.0" layoutY="198.0" mnemonicParsing="false" onAction="#convert1" text="Convert" />
+      <ComboBox fx:id="combox2" layoutX="70.0" layoutY="150.0" prefWidth="150.0" promptText="Select" />
+      <ComboBox fx:id="combox3" layoutX="301.0" layoutY="150.0" prefWidth="150.0" promptText="Select" />
+   </children>
 </AnchorPane>
