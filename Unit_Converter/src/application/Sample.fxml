@@ -7,10 +7,27 @@
 
 <AnchorPane prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
    <children>
-      <TextField fx:id="txt1" layoutX="71.0" layoutY="125.0" promptText="Add Unit to Convert" />
-      <TextField fx:id="txt2" layoutX="301.0" layoutY="125.0" promptText="Add Unit to Convert" />
-      <Button fx:id="bt1" layoutX="221.0" layoutY="198.0" mnemonicParsing="false" onAction="#convert1" text="Convert" />
-      <ComboBox fx:id="combox2" layoutX="70.0" layoutY="150.0" prefWidth="150.0" promptText="Select" />
-      <ComboBox fx:id="combox3" layoutX="301.0" layoutY="150.0" prefWidth="150.0" promptText="Select" />
+      <TabPane prefHeight="300.0" prefWidth="500.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Mass">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="248.0" prefWidth="461.0">
+                     <children>
+                        <TextField fx:id="txt1" layoutX="277.0" layoutY="92.0" onKeyReleased="#Convert1" onKeyTyped="#verifNum" promptText="Add Unit to Convert" />
+                        <Button fx:id="btnexit" layoutY="245.0" mnemonicParsing="false" onAction="#quitter" prefHeight="25.0" prefWidth="44.0" text="Exit" />
+                        <TextField fx:id="txt2" layoutX="101.0" layoutY="92.0" onKeyReleased="#Convert2" onKeyTyped="#verifNum" promptText="Add Unit to Convert" />
+                        <ComboBox fx:id="combox3" layoutX="276.0" layoutY="145.0" prefWidth="150.0" promptText="Select" />
+                        <ComboBox fx:id="combox2" layoutX="100.0" layoutY="145.0" prefWidth="150.0" promptText="Select" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Untitled Tab 2">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
    </children>
 </AnchorPane>
