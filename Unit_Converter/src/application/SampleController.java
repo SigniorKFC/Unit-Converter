@@ -166,7 +166,7 @@ public class SampleController implements Initializable
 	
 	@FXML
     private ObservableList<String> listEnergy=FXCollections.observableArrayList("Joules","Kilojoules","Watt hour");
-    private double []Energy= {1,1000,0.000277778}; //pour differencier les differents conversions energies.
+    private double []Energy= {1000,1,0.277778}; //pour differencier les differents conversions energies.
     
     @FXML
 	private void Convert5()
